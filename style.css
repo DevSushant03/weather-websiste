@@ -1,0 +1,266 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #34313a;
+  transition: background 5s ease-in-out;
+}
+nav input{
+  border:none;
+  width:200px;
+  font-size:20px;
+  height:25px;
+  border-radius:25px;
+  color:#0b0a0a;
+  padding:10px;
+  margin:10px;
+  font-family: "Poppins", sans-serif;
+   
+
+}
+nav input:focus{
+  outline:none
+}
+nav button{
+ 
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Codec cold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    text-transform: uppercase;
+  }
+
+  
+nav i {
+  color: white;
+  font-size: 25px;
+  margin: 20px 0px 0px 20px;
+}
+
+* {
+  color: white;
+}
+
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.date-info {
+  text-align: left;
+}
+
+.currentDate {
+  font-size: 20px;
+}
+
+.currentDay {
+  font-size: 18px;
+}
+
+.currentMonth {
+  font-size: 16px;
+}
+
+.today-weather {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.temperature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #2f2c34, #38343e);
+  box-shadow: 5px 5px 14px #1d1b20,
+    -5px -5px 14px #4b4754;
+}
+
+.temp-data span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+
+}
+
+.temp-data span i {
+  margin-right: 20px;
+}
+
+.template {
+  width: 100px;
+  margin: 20px;
+  filter: drop-shadow(0px 0px 10px black);
+
+}
+
+.description {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  border-radius: 19px;
+  background: linear-gradient(145deg, #2f2c34, #38343e);
+  box-shadow: 5px 5px 14px #1d1b20,
+    -5px -5px 14px #4b4754;
+}
+
+.description span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.description span img {
+  width: 40px;
+}
+
+.weak-temperature {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+
+}
+
+.scroll-span {
+  display: inline-block;
+  width: 120px;
+  /* Set the width as needed */
+  height: 200px;
+  /* Set the height as needed */
+  margin: 10px;
+  /* Adjust margin as needed */
+  overflow-x: auto;
+  white-space: nowrap;
+  border-radius: 11px;
+  background: #34313a;
+  box-shadow: inset 5px 5px 14px #1d1b20,
+    inset -5px -5px 14px #4b4754;
+
+}
+
+.scroll-span i {
+  color: white;
+  width: 20px;
+  margin: 20px;
+  filter: drop-shadow(0px 0px 5px #474747)
+}
+
+.scroll-span h2,
+h4 {
+  text-align: center;
+  margin: 2px
+}
+
+select {
+  color: #fcfcfc;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+select:focus {
+  outline: none;
+}
+
+/*media query start*/
+
+@media only screen and (min-width:601px) {
+
+  .temperature {
+    box-shadow: none;
+    margin: 0px;
+    padding: :0px;
+  }
+
+  .today-weather {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .temperature {
+    width: 70%;
+    background: transparent;
+  }
+
+  .temp-data {
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 270px;
+    width: 270px;
+    background: linear-gradient(145deg, #2f2c34, #38343e);
+    box-shadow: 7px 7px 21px #211f25,
+      -7px -7px 21px #47434f;
+    padding: 15px
+  }
+
+  .temp-data span i {
+    font-size: 30px;
+  }
+
+  .temp-data h2 {
+    font-size: 40px;
+  }
+
+  .description {
+    width: 350px;
+    height: 300px;
+    border-radius: 19px;
+
+  }
+
+  .description h4 {
+    font-size: 20px;
+  }
+
+  .template {
+    margin-right: 130px;
+    width: 300px;
+    filter: drop-shadow(0px 0px 10px #232324);
+
+  }
+
+  .weak-temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  .scroll-span {
+    width: 150px;
+    border-radius: 19px;
+
+  }
+
+  .scroll-span img {
+    margin-left: 40px
+  }
+}
